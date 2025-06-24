@@ -8,7 +8,7 @@ type GenerateLink = ActionHandler<
   { link: string }
 >;
 
-export const generateUrlHandler: GenerateLink = ({ data, config, options }) => {
+export const generateUrlHandler: GenerateLink = ({ data, config }) => {
   const handleGenerateUrl = async () => {
     try {
       const s3 = new S3({
