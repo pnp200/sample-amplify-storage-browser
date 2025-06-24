@@ -59,7 +59,7 @@ const GenerateUrlView = () => {
     <Flex direction="column">
       <Button onClick={onActionExit}>Exit</Button>
       <StepperField
-        label="Duration"
+        label="Duration (minutes)"
         step={15}
         value={duration}
         min={15}
